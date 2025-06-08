@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Login</title><link rel="stylesheet" href="/css/style.css"></head>
+<body>
+  <div class="login-container">
+    <h2>Entrada Selada</h2>
+    <% if (typeof error !== 'undefined') { %>
+      <p class="error">Acesso negado. Credenciais inválidas.</p>
+    <% } %>
+    <form method="POST" action="/login">
+      <input type="text" name="user" placeholder="Usuário">
+      <input type="password" name="pass" placeholder="Senha">
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+</body>
+</html>
